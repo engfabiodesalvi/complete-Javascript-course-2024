@@ -1,4 +1,6 @@
 # Curso Javascript Completo 2024 [Iniciantes] + 14 Mini-projetos
+#### Autor: Jhonatan de Souza ([<u>Video Youtube</u>](https://youtu.be/i6Oi-YtXnAU?si=g1aZttks4QHCtLok)).
+#### 
 
 ## Tópicos abordados
 
