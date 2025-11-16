@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso Javascript</title>
-    <script src="../js/introducao-manipulacao-DOM.js"></script>
+    <script src="../js/introducao-manipulacao-DOM.js" defer></script>
 </head>
 <body>
     <h1>Introdução a manipulação do DOM</h1>
     <h2></h2>
+
+    <form>
+        <fieldset>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Digite o seu nome" value="" />
+        </fieldset>
+        <fieldset>
+            <label for="name">Descrição:</label>
+            <textarea id="description" placeholder="Digite o seu nome" resize="none" cols="40" rows="20">
+            </textarea>
+        </fieldset>   
+        <fieldset>
+            <label>Digite no console do desenvolvedor:<br/>document.getElementById('submit').click()</label>
+            <button type="submit" id="submit">Enviar</button>
+        </fieldset>     
+    </form>
+
     <a href="../index.html" target="_self">< Votar</a>
+
 </body>
 </html>

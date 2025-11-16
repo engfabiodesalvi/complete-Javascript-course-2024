@@ -1,0 +1,90 @@
+fieldset {
+    margin: 10px;
+    padding: 0;
+    border: 5px solid rgb(43, 134, 183);
+    border-radius: 15px;
+}
+
+fieldset div:nth-child(1), 
+fieldset form div:nth-child(4),#permissaoDeEntrada {
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: none;
+}
+
+fieldset div:nth-child(1) h3 {
+    margin: 5px;
+}
+
+fieldset form div:nth-child(n+2):nth-child(-n+4) {
+    margin: 10px 5px;
+    border: solid 0px none;
+    background-color: none;
+    padding: 5px;
+}
+
+#checkGuestList, #clearList {
+    border-radius: 10px;
+    background-color:rgb(224, 224, 224);
+    border: solid 1px rgb(132, 132, 132);
+    padding: 10px;
+    margin: 0px 5px;
+}
+
+/* this selector must come first */
+#checkGuestList:hover, #clearList:hover {
+    border-radius: 10px;
+    background-color:rgb(242, 242, 242);
+    border: solid 1px rgb(164, 164, 164);
+}
+
+/* this selector should come next */
+#checkGuestList:active, #clearList:active {
+    border-radius: 10px;
+    background-color:rgb(218, 218, 218);
+    border: solid 1px rgb(164, 164, 164);
+}
+
+#clearList {
+    display: none;
+}
+
+#guest, #host {
+    width: 100%;
+    box-sizing: border-box;    
+}
+
+#permissaoDeEntrada {
+    margin: 5px;
+    padding: 10px 0;
+}
+
+#deny, #allow {    
+    font-size: large;
+    font-weight: 600;    
+    border-radius: 15px;
+    margin: 10px 10px;
+}
+
+#deny {
+    color: rgb(251, 232, 185);
+    background-color: rgb(176, 22, 22);
+}
+
+#allow {
+    color: rgb(253, 227, 161);
+    background-color: rgb(0, 95, 15);
+}
+
+#deny, #allow {
+    /* Element is completely removed from the document flow and does not take up any space.
+    -> none / block
+    */
+    display: none;   
+    text-align: center;     
+}
+
+#deny label, #allow label {
+    display: block;
+}

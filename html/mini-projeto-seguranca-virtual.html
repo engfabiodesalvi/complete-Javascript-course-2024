@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso Javascript</title>
-    <script src="../js/mini-projeto-seguranca-virtual.js"></script>
+    <link rel="stylesheet" href="../css/mini-projeto-seguranca-virtual.css" />
+    <script src="../js/mini-projeto-seguranca-virtual.js" defer></script>
 </head>
+
 <body>
     <h1>Mini-Projeto 15</h1>
     <h2>Segurança virtual</h2>
-    <a href="../index.html" target="_self">< Votar</a>
+
+    <hr />
+
+    <h2>Festa VIP</h2>    
+    <section>
+        <fieldset>            
+            <form id="convidados" onreset="limparEntrada()">
+                <div>
+                    <h3>Bem vindo a festa!</h3>
+                </div>
+                <div>
+                    <label for="guest"><b>Nome do convidado(a)</b></label><br />
+                    <input type="text" id="guest" placeholder="Nome do convidado(a)" />
+                </div>
+                <div>
+                    <label for="host"><b>Nome do anfitrião/anfitriã</b></label><br />
+                    <input type="text" id="host" placeholder="Nome do anfritrião/anfitriã" />    
+                </div>
+                <div>
+                    <button id='checkGuestList' onclick="verificarEntrada()" disabled="true">Verificar lista de convidados!</button>
+                    <button id='clearList' type="reset" >Limpar dados!</button>                    
+                </div>
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <h3>Entrada permitida?</h3>
+            </div>
+            <div id="search">
+                <label id="permissaoDeEntrada">Pesquisando convidado...</label>
+            </div>
+            <div id="deny">
+                <label id="permissaoDeEntrada">N E G A D A !<br/> VOCÊ NÃO PODE ENTRAR!</label>
+            </div>  
+            <div id="allow">
+                <label id="permissaoDeEntrada">P E R M I T I D A !<br/>VOCÊ PODE ENTRAR!</label>
+            </div>                      
+        </fieldset>
+
+    </section>
+
+    <hr />
+
+    <a href="../index.html" target="_self">
+        < Votar</a>
 </body>
+
 </html>
